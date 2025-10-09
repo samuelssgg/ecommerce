@@ -33,6 +33,7 @@ a{
 
 aside{
     padding: 2rem;
+    padding-right: 0;
     color: var(--crl-white);
     position: sticky;
     top: 0;
@@ -47,7 +48,97 @@ aside{
     font-size: 1.3rem;
 }
 
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.boton-menu{
+    background-color: transparent;
+    border: 0;
+    color: var(--crl-white);
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    font-size: 0.85rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.boton-menu.active{
+    background-color: var(--crl-white);
+    color: var(--crl-main);
+    width: 100%;
+}
+
+.bi-hand-index-thumb-fill,
+.bi-hand-index-thumb{
+    transform: rotateZ(90deg);
+
+}
+
 .text-footer{
     color: gray;
     font-size: 0.75rem;
 }
+
+main{
+    background-color: var(--crl-white);
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+}
+
+.titulo-principal{
+    color: var(--crl-main);
+}
+
+.contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.producto-imagen{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.producto-detalles{
+    background-color: var(--crl-main);
+    color: var(--crl-white);
+    padding: 5rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.producto-titulo{
+    font-size: 1rem;
+}
+
+.producto-agregar{
+    border: 0;
+    background-color: var(--crl-white);
+    color: var(--crl-main);
+    padding: .5rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 2px solid var(--crl-white);
+    transition: background-color .2s, color .2s;
+}
+
+.producto-agregar:hover{
+    background-color: var(--crl-main);
+    color: var(--crl-white);
+}
+
+
